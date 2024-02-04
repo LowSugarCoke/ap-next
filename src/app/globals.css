@@ -8,3 +8,20 @@
     text-wrap: balance;
   }
 }
+
+
+@keyframes fadeOutUpwards {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeOutUpwards {
+  animation: fadeOutUpwards 1s ease-in-out forwards;
+}
+
