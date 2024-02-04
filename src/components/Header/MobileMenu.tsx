@@ -26,8 +26,8 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">AP程式</span>
             <Image
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              className="h-10 w-auto rounded-full"
+              src="/AP_logo_small.png"
               alt=""
               width={32}
               height={32}
