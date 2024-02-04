@@ -14,6 +14,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           'custom-gradient': 'linear-gradient(to top, #dfe9f3 0%, white 100%)',
       },
+      fontFamily: {
+        'taipei': ['TaipeiHeiti', 'sans-serif'],
+        'taipei-bold': ['TaipeiHeitiBold', 'sans-serif'],
+        'taipei-light': ['TaipeiHeitiLight', 'sans-serif'],
+      },
     },
   },
   plugins: [],

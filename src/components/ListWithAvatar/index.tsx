@@ -20,7 +20,9 @@ export function ListWithAvatar() {
       placeholder={undefined}
       className="w-full max-w-4xl mx-auto my-10 p-5 md:p-10 border border-gray-200 rounded-lg relative"
     >
-      <h1 className="text-center m-10 text-3xl font-semibold">專業師資團隊</h1>
+      <h1 className="font-taipei-bold text-center m-10 text-3xl font-semibold">
+        專業師資團隊
+      </h1>
 
       <List placeholder={undefined} className="relative">
         {displayedTeachers.map((teacher, index) => (
@@ -35,7 +37,7 @@ export function ListWithAvatar() {
             >
               <Avatar
                 placeholder={undefined}
-                className="h-16 w-16 rounded-full object-cover object-center mx-auto"
+                className="h-16 w-16 rounded-full object-cover object-center mx-auto font-taipei"
                 alt={teacher.name}
                 src={teacher.imageUrl}
               />
@@ -45,12 +47,13 @@ export function ListWithAvatar() {
                 placeholder={undefined}
                 variant="h6"
                 color="blue-gray"
+                font-taipei
               >
                 {teacher.name}
                 {teacher.role.map((role, roleIndex) => (
                   <span
                     key={roleIndex}
-                    className="block md:inline-block md:ml-2"
+                    className="block md:inline-block md:ml-2 font-taipei"
                   >
                     @{role}
                   </span>
@@ -59,7 +62,7 @@ export function ListWithAvatar() {
               <Typography
                 placeholder={undefined}
                 color="gray"
-                className="font-normal"
+                className="font-normal font-taipei"
               >
                 課程:
                 {teacher.class.map((teachClass, classIndex) => (

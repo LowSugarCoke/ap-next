@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'TaipeiHeiti';
+  src: url('/fonts/TaipeiSansTCBeta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaipeiHeitiBold';
+  src: url('/fonts/TaipeiSansTCBeta-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TaipeiHeitiLight';
+  src: url('/fonts/TaipeiSansTCBeta-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
