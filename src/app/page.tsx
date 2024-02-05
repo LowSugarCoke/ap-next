@@ -24,7 +24,7 @@ export default function Home() {
     options: {
       root: null,
       rootMargin: "0px",
-      threshold: 0.1,
+      threshold: 0.0,
     },
   });
 
@@ -51,9 +51,7 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto h-2/7 p-8 bg-white rounded-lg shadow-md border border-gray-200 mt-10 ">
           <div className="flex flex-col items-center text-center pb-8">
-            <h1 className="font-taipei-bold text-gray-800 my-4 text-3xl">
-              關於AP程式
-            </h1>
+            <h1 className="font-taipei-bold  my-4 text-3xl">關於AP程式</h1>
             <p className="text-gray-600 font-taipei text-left">
               &nbsp; &nbsp; &nbsp; &nbsp;我們致力於精英化教育，旨在幫助學生在
               <strong>&quot;最短時間&quot;</strong>

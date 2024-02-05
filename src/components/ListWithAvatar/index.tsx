@@ -20,7 +20,7 @@ export function ListWithAvatar() {
       placeholder={undefined}
       className="w-full max-w-4xl mx-auto my-10 p-5 md:p-10 border border-gray-200 rounded-lg relative"
     >
-      <h1 className="font-taipei-bold text-center m-10 text-3xl font-semibold">
+      <h1 className="font-taipei-bold text-center m-10 text-3xl">
         專業師資團隊
       </h1>
 
