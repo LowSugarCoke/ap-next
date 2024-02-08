@@ -15,7 +15,7 @@ export default function Home() {
     options: {
       root: null,
       rootMargin: "0px",
-      threshold: 0.1,
+      threshold: 0.0,
     },
   });
 
