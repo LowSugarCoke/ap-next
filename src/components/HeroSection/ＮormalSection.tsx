@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import "../../app/globals.css";
 import { HeroSectionProps } from "./index";
+import { basePath } from "../../app/config";
 
 const NormalSection = ({
   title,
@@ -33,7 +34,7 @@ const NormalSection = ({
         </div>
         <div className="md:w-1/2 h-screen overflow-hidden">
           <Image
-            src={imgPath}
+            src={`${basePath}${imgPath}`}
             alt="Hero"
             className="h-full w-full rounded-bl-[150px] shadow-lg object-cover "
             width={640}

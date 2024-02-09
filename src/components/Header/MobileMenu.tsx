@@ -1,7 +1,9 @@
+import Link from "next/link";
+import Image from "next/image";
 import { Dialog, Disclosure } from "@headlessui/react";
 import { XMarkIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import { linksData } from "./data";
+import { basePath } from "../../app/config";
 
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -23,16 +25,16 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
       <div className="fixed inset-0 z-10" />
       <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">AP程式</span>
             <Image
               className="h-10 w-auto rounded-full"
-              src="/Ap_logo_small.png"
+              src={`${basePath}/Ap_logo_small.png`}
               alt=""
               width={32}
               height={32}
             />
-          </a>
+          </Link>
           <button
             type="button"
             className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -65,7 +67,7 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
                         {link.subLinks.map((subLink) => (
                           <Disclosure.Button
                             as="a"
-                            href={subLink.href}
+                            href={`${basePath}${subLink.href}`}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             key={subLink.name}
                           >

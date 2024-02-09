@@ -47,7 +47,7 @@ export function ListWithAvatar() {
                 placeholder={undefined}
                 variant="h6"
                 color="blue-gray"
-                font-taipei
+                className="font-taipei"
               >
                 {teacher.name}
                 {teacher.role.map((role, roleIndex) => (

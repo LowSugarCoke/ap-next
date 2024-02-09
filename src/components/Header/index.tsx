@@ -1,6 +1,6 @@
-import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import NavigationBar from "./NavigationBar";
+import { useState } from "react";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
