@@ -1,7 +1,8 @@
+import Image from "next/image";
+import Link from "next/link";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon, Bars3Icon } from "@heroicons/react/20/solid";
-import Image from "next/image";
 import { linksData } from "./data";
 
 const linkStyle = "text-sm font-semibold leading-6 text-gray-900";
@@ -17,7 +18,7 @@ const NavigationBar = ({ setMobileMenuOpen }: NavigationBarProps) => {
       className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
     >
       <div className="flex lg:flex-1">
-        <a href="/" className="-m-1.5 p-1.5">
+        <Link href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">AP程式</span>
           <Image
             className="h-10 w-auto rounded-full"
@@ -26,7 +27,7 @@ const NavigationBar = ({ setMobileMenuOpen }: NavigationBarProps) => {
             width={32}
             height={32}
           />
-        </a>
+        </Link>
       </div>
       <div className="flex lg:hidden">
         <button
@@ -73,13 +74,13 @@ const NavigationBar = ({ setMobileMenuOpen }: NavigationBarProps) => {
                           />
                         </div>
                         <div className="flex-auto">
-                          <a
+                          <Link
                             href={subLink.href}
                             className="block font-semibold text-gray-900"
                           >
                             {subLink.name}
                             <span className="absolute inset-0" />
-                          </a>
+                          </Link>
                           <p className="mt-1 text-gray-600">
                             {subLink.description}
                           </p>
@@ -91,9 +92,9 @@ const NavigationBar = ({ setMobileMenuOpen }: NavigationBarProps) => {
               </Transition>
             </Popover>
           ) : (
-            <a key={link.name} href={link.href} className={linkStyle}>
+            <Link key={link.name} href={link.href} className={linkStyle}>
               {link.name}
-            </a>
+            </Link>
           )
         )}
       </Popover.Group>
