@@ -2,7 +2,7 @@
 import Image from "next/image";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import { useRef } from "react";
-import { Header } from "../components/Header/index";
+import Header from "../components/Header/index";
 import { ListWithAvatar } from "../components/ListWithAvatar/index";
 import { Footer } from "../components/Footer/index";
 
@@ -29,7 +29,7 @@ export default function Home() {
   });
 
   return (
-    <main className="bg-custom-gradient pb-10">
+    <main className="bg-custom-gradient pb-10 animate-fade-in-down">
       <Header />
 
       <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[100vh]">
