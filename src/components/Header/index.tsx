@@ -6,7 +6,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-10 bg-white">
+    <header className="fixed top-0 w-full z-10 bg-white shadow-lg">
       <NavigationBar setMobileMenuOpen={setMobileMenuOpen} />
       <MobileMenu
         mobileMenuOpen={mobileMenuOpen}

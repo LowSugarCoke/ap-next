@@ -8,7 +8,6 @@ import { basePath } from "../../app/config";
 const NormalSection = ({
   title,
   subTitle,
-  content,
   imgPath,
   className,
 }: HeroSectionProps) => {
@@ -21,9 +20,8 @@ const NormalSection = ({
               {title}
             </h1>
             <p className="text-xl mb-8 font-taipei text-black">
-              {subTitle}
-              {content &&
-                content.map((item, index) => (
+              {subTitle &&
+                subTitle.map((item, index) => (
                   <React.Fragment key={index}>
                     <br />
                     {item}
