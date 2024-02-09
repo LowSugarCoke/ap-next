@@ -5,8 +5,7 @@ import MobileSection from "./MobileSection";
 
 export interface HeroSectionProps {
   title: string;
-  subTitle: string;
-  content: string[];
+  subTitle: string[];
   imgPath: string;
   className?: string;
 }
@@ -14,7 +13,7 @@ export interface HeroSectionProps {
 const HeroSection = ({
   title,
   subTitle,
-  content,
+
   imgPath,
 }: HeroSectionProps) => {
   return (
@@ -23,7 +22,6 @@ const HeroSection = ({
         className="hidden lg:block"
         title={title}
         subTitle={subTitle}
-        content={content}
         imgPath={imgPath}
       />
 
@@ -31,7 +29,6 @@ const HeroSection = ({
         className="block lg:hidden animate-fade-in-down"
         title={title}
         subTitle={subTitle}
-        content={content}
         imgPath={imgPath}
       />
     </div>
