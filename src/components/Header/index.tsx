@@ -2,7 +2,7 @@ import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import NavigationBar from "./NavigationBar";
 
-export const Header = () => {
+const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -15,3 +15,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

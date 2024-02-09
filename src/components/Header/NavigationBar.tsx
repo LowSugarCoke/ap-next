@@ -17,11 +17,11 @@ const NavigationBar = ({ setMobileMenuOpen }: NavigationBarProps) => {
       className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
     >
       <div className="flex lg:flex-1">
-        <a href="#" className="-m-1.5 p-1.5">
+        <a href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">AP程式</span>
           <Image
             className="h-10 w-auto rounded-full"
-            src="Ap_logo_small.png"
+            src="/Ap_logo_small.png"
             alt=""
             width={32}
             height={32}

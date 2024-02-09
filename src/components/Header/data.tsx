@@ -79,14 +79,14 @@ export const advanceSubLink: SubLink[] = [
     name: "AI競賽班",
     description:
       "AI競賽班專門針對希望在人工智慧領域展現實力的學員開設，課程涵蓋機器學習、深度學習基礎，以及最新的AI技術和應用。學員將通過實際的AI項目和競賽案例，學習如何設計、訓練和優化AI模型，為參加各種AI競賽做好準備。",
-    href: "#",
+    href: "/skills/ai-competition",
     icon: SquaresPlusIcon,
   },
   {
     name: "Leetcode面試班",
     description:
       "Leetcode面試班針對準備軟體工程師面試的學員設計，提供從基礎到進階的編碼面試題目訓練。課程將涵蓋數據結構、演算法、系統設計等關鍵領域，並透過實戰演練，幫助學員掌握解題技巧，提升面試競爭力。",
-    href: "#",
+    href: "/skills/leetcode-interview",
     icon: GlobeAltIcon,
   },
 ];
