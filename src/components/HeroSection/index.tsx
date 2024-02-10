@@ -10,12 +10,7 @@ export interface HeroSectionProps {
   className?: string;
 }
 
-const HeroSection = ({
-  title,
-  subTitle,
-
-  imgPath,
-}: HeroSectionProps) => {
+const HeroSection = ({ title, subTitle, imgPath }: HeroSectionProps) => {
   return (
     <div className="w-full h-full animate-fade-in-down">
       <NormalSection

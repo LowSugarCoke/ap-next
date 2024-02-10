@@ -1,8 +1,8 @@
 import { Typography } from "@material-tailwind/react";
 
-export function Footer() {
+const Footer = () => {
   return (
-    <footer className="flex flex-wrap items-center justify-center border-t border-blue-gray-50 p-4 text-center gap-y-4 md:flex-row md:justify-center md:p-6 md:gap-x-12">
+    <footer className="flex flex-wrap items-center justify-center  p-4 text-center gap-y-4 md:flex-row md:justify-center md:p-6 md:gap-x-12">
       <Typography
         placeholder={undefined}
         color="blue-gray"
@@ -58,4 +58,6 @@ export function Footer() {
       </ul>
     </footer>
   );
-}
+};
+
+export default Footer;
