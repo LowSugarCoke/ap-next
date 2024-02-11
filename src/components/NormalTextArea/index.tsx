@@ -3,11 +3,12 @@ import React from "react"; // 如果你使用的是 React 17 之前的版本，�
 export interface NormalTextAreaProps {
   title: string;
   content: string[];
+  className?: string;
 }
 
-const NormalTextArea = ({ title, content }: NormalTextAreaProps) => {
+const NormalTextArea = ({ title, content, className }: NormalTextAreaProps) => {
   return (
-    <div className="max-w-5xl mx-auto h-2/7 p-8 mt-10">
+    <div className={`max-w-5xl mx-auto h-2/7 p-8 mt-10 ${className}`}>
       <h1 className="font-taipei-bold my-4 text-3xl">{title}</h1>
       {content &&
         content.map((value, index) => (
