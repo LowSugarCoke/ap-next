@@ -1,9 +1,14 @@
 import Head from "next/head";
-import HeroSection from "../../components/HeroSection";
-import Header from "../../components/Header";
-import NormalTextArea from "../../components/NormalTextArea";
-import { basePath } from "@/app/config";
-import Footer from "@/components/Footer";
+import HeroSection from "../../../components/HeroSection";
+import Header from "../../../components/Header";
+import NormalTextArea from "../../../components/NormalTextArea";
+import TwoColumnLayout from "../../../components/TwoColumnLayout";
+import AudienceBlock from "../../../components/AudienceBlock";
+import LearningTimeline from "../../../components/LearningTimeline";
+import Footer from "../../../components/Footer";
+import { audienceData } from "./data";
+import { learningStages } from "./data";
+import { basePath } from "../../../app/config";
 
 export default function LeetcodeInterview() {
   return (
@@ -51,6 +56,20 @@ export default function LeetcodeInterview() {
             "✓ 分析和總結 : 每解決⼀個問題後，都要花時間去理解最佳解法。老師會幫助你分析你的解法和其他⾼效解法之間的差異，並總結學習。",
           ]}
         />
+
+        <TwoColumnLayout
+          leftColumn={
+            <div>
+              <LearningTimeline stages={learningStages} />
+            </div>
+          }
+          rightColumn={
+            <div>
+              <AudienceBlock {...audienceData} />
+            </div>
+          }
+        />
+
         <Footer />
       </main>
     </>
