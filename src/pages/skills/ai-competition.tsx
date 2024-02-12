@@ -1,15 +1,14 @@
 import Head from "next/head";
-import HeroSection from "../../components/HeroSection";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import NormalTextArea from "../../components/NormalTextArea";
-import AudienceBlock from "../../components/AudienceBlock";
-import TwoColumnLayout from "../../components/TwoColumnLayout";
-import { basePath } from "../../app/config";
-import { AudienceBlockProps } from "../../components/AudienceBlock";
-import LearningTimeline, {
-  LearningStage,
-} from "../../components/LearningTimeline";
+import HeroSection from "@/components/HeroSection";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import NormalTextArea from "@//components/NormalTextArea";
+import AudienceBlock from "@//components/AudienceBlock";
+import TwoColumnLayout from "@/components/TwoColumnLayout";
+import LearningTimeline from "@/components/LearningTimeline";
+import { basePath } from "@/app/config";
+import { AudienceBlockProps } from "@/components/AudienceBlock";
+import { LearningStage } from "@/components/LearningTimeline";
 import {
   BookOpenIcon,
   ChartBarIcon,
@@ -137,16 +136,15 @@ export default function AICompetition() {
         <TwoColumnLayout
           leftColumn={
             <div>
-              <LearningTimeline stages={learningStages} className="mt-10" />
+              <LearningTimeline stages={learningStages} />
             </div>
           }
           rightColumn={
             <div>
-              <AudienceBlock {...audienceData} className="mt-10" />
+              <AudienceBlock {...audienceData} />
             </div>
           }
         />
-
         <Footer />
       </main>
     </>
