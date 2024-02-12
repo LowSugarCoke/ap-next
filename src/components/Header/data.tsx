@@ -68,14 +68,6 @@ export const APCSSubLink: SubLink[] = [
 
 export const advanceSubLink: SubLink[] = [
   {
-    name: "競程選手班",
-    description:
-      "此課程專為準備參加程式競賽的學生而設計，從基礎算法訓練到高階問題解決策略，全面提升解題速度與效率。學員將學習資料結構、演算法分析及優化技巧，並透過大量練習與模擬競賽，為國內外程式競賽做好充分準備。",
-    href: "#",
-    icon: RocketLaunchIcon,
-  },
-
-  {
     name: "AI競賽班",
     description:
       "AI競賽班專門針對希望在人工智慧領域展現實力的學員開設，課程涵蓋機器學習、深度學習基礎，以及最新的AI技術和應用。學員將通過實際的AI項目和競賽案例，學習如何設計、訓練和優化AI模型，為參加各種AI競賽做好準備。",
@@ -88,6 +80,13 @@ export const advanceSubLink: SubLink[] = [
       "Leetcode面試班針對準備軟體工程師面試的學員設計，提供從基礎到進階的編碼面試題目訓練。課程將涵蓋數據結構、演算法、系統設計等關鍵領域，並透過實戰演練，幫助學員掌握解題技巧，提升面試競爭力。",
     href: `/skills/leetcode-interview`,
     icon: GlobeAltIcon,
+  },
+  {
+    name: "Andriod認證競賽班",
+    description:
+      "Android認證競賽班專為想要獲得Android開發認證的學員設計。這個課程涵蓋了從基礎到進階的Android開發技術，包括應用設計、開發、測試以及發布。學員將透過實作專案，學習如何使用最新的Android開發工具和框架，以及如何遵循最佳實踐來建造高效能的應用。完成課程後，學員將具備參加和通過Android開發者認證考試的能力，進而提升職業競爭力。",
+    href: "#",
+    icon: RocketLaunchIcon,
   },
 ];
 
@@ -123,10 +122,6 @@ export const linksData: MainLink[] = [
   },
   {
     name: "上課方式",
-    href: "#",
-  },
-  {
-    name: "榮譽榜",
     href: "#",
   },
   {
