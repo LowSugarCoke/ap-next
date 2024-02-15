@@ -29,12 +29,12 @@ export default function Home() {
   });
 
   return (
-    <main className="bg-custom-gradient pb-10 animate-fade-in-down">
+    <main className="bg-custom-gradient pb-10 flex flex-col items-center  ">
       <Header />
 
       <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[100vh]">
         <Image
-          className="object-cover object-center"
+          className="object-cover object-center animate-fade-in-down"
           src="banner.png"
           alt=""
           layout="fill"
@@ -69,6 +69,7 @@ export default function Home() {
       >
         <ListWithAvatar />
       </div>
+
       <Footer />
     </main>
   );
