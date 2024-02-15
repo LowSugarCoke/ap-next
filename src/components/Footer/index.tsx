@@ -4,8 +4,8 @@ import { basePath } from "@/app/config";
 
 const Footer = () => {
   return (
-    <footer className=" text-gray-600 body-font w-2/3  ">
-      <div className="container px-12 pt-24 mx-auto ">
+    <footer className=" text-gray-600 body-font w-full  bg-sky-500/5 pb-10">
+      <div className="container px-12 pt-24 mx-auto w-2/3">
         <div className="flex flex-wrap md:items-center lg:items-start md:flex-row md:flex-nowrap ">
           <div className="w-1/2 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <div className="mt-3 justify-center flex  md:flex-row md:justify-start ">
@@ -48,8 +48,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center justify-end ">
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4  ">
+          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center justify-end  ">
+            <div className="lg:w-1/3 md:w-1/2 w-full px-4   ">
               <h1 className="title-font font-medium text-gray-900 tracking-widest text-base mb-3 font-taipei">
                 關於
               </h1>
@@ -60,7 +60,7 @@ const Footer = () => {
                       as="a"
                       href="#"
                       color="blue-gray"
-                      className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 font-taipei"
+                      className="font-normal transition-colors hover:text-blue-500  font-taipei"
                       placeholder={undefined}
                     >
                       關於我們
@@ -72,7 +72,7 @@ const Footer = () => {
                       as="a"
                       href="#"
                       color="blue-gray"
-                      className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 font-taipei"
+                      className="font-normal transition-colors hover:text-blue-500  font-taipei"
                       placeholder={undefined}
                     >
                       聯絡我們
@@ -82,7 +82,7 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div className="lg:w-1/5 md:w-1/2 w-full px-4  ">
+            <div className=" lg:w-1/3 md:w-1/2 w-full px-4  ">
               <h1 className="title-font font-medium text-gray-900 tracking-widest text-base mb-3 font-taipei">
                 法律
               </h1>
@@ -93,7 +93,7 @@ const Footer = () => {
                       as="a"
                       href="#"
                       color="blue-gray"
-                      className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500 font-taipei"
+                      className="font-normal transition-colors hover:text-blue-500  font-taipei"
                       placeholder={undefined}
                     >
                       授權

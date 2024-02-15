@@ -29,7 +29,7 @@ export default function Home() {
   });
 
   return (
-    <main className="bg-custom-gradient pb-10 flex flex-col items-center  ">
+    <main className="bg-custom-gradient  flex flex-col items-center  ">
       <Header />
 
       <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[100vh]">
