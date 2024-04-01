@@ -6,6 +6,7 @@ import { HeroSectionProps } from "./index";
 import { basePath } from "../../app/config";
 
 const NormalSection = ({
+  highlight,
   title,
   subTitle,
   imgPath,
@@ -19,6 +20,16 @@ const NormalSection = ({
             <h1 className="text-5xl font-bold mb-4 font-taipei-bold text-black">
               {title}
             </h1>
+            <div className="text-xl font-taipei mb-4 text-black">
+              {highlight &&
+                highlight.map((line, index) => (
+                  <React.Fragment key={index}>
+                    {index > 0 && <br />}
+                    {line}
+                  </React.Fragment>
+                ))}
+            </div>
+
             <p className="text-xl mb-8 font-taipei text-black">
               {subTitle &&
                 subTitle.map((item, index) => (

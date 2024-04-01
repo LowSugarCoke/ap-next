@@ -41,31 +41,6 @@ export const skillSubLink: SubLink[] = [
   },
 ];
 
-export const APCSSubLink: SubLink[] = [
-  {
-    name: "APCS Lv 0",
-    description:
-      "本課程為初學者設計，著重於C++的基礎知識和程式設計邏輯。學生將學習變數、控制結構、函式、以及簡單的資料結構，為進一步的學習打下堅實的基礎。透過實作練習和專案，學生能夠理解程式語言的基本概念，並開始解決簡單的程式設計問題。",
-    href: "#",
-    icon: CommandLineIcon,
-  },
-
-  {
-    name: "APCS Lv 1",
-    description:
-      "第一級課程旨在進一步加深學生對C++和程式設計的理解。本課程將介紹更複雜的資料結構如串列、堆疊和隊列，以及基礎演算法的概念，包括排序和搜尋。學生將通過實際案例學習如何有效地運用這些工具來處理和分析數據，為解決更複雜的問題做準備。",
-    href: "#",
-    icon: PuzzlePieceIcon,
-  },
-  {
-    name: "APCS Lv 2",
-    description:
-      "本課程為高級學習者設計，著重於高階程式設計技巧和演算法的應用。學生將學習進階資料結構（如樹狀結構和圖）、演算法分析，以及演算法策略，例如動態規劃和貪婪演算法。課程也將探討程式設計中的最佳實踐，讓學生能夠解決複雜的演算法問題。",
-    href: "#",
-    icon: CubeTransparentIcon,
-  },
-];
-
 export const advanceSubLink: SubLink[] = [
   {
     name: "AI競賽班",
@@ -110,9 +85,7 @@ export const linksData: MainLink[] = [
   },
   {
     name: "APCS課程",
-    href: "#",
-    hasPopover: true,
-    subLinks: APCSSubLink,
+    href: "/apcs",
   },
   {
     name: "進階課程",

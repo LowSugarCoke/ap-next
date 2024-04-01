@@ -1,8 +1,8 @@
-import React from "react"; // 如果你使用的是 React 17 之前的版本，需要导入 React
+import React from "react";
 
 export interface NormalTextAreaProps {
   title: string;
-  content: string[];
+  content?: string[];
   className?: string;
 }
 
