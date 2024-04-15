@@ -4,17 +4,24 @@ import NormalSection from "./ＮormalSection";
 import MobileSection from "./MobileSection";
 
 export interface HeroSectionProps {
+  highlight?: string[];
   title: string;
   subTitle: string[];
   imgPath: string;
   className?: string;
 }
 
-const HeroSection = ({ title, subTitle, imgPath }: HeroSectionProps) => {
+const HeroSection = ({
+  highlight,
+  title,
+  subTitle,
+  imgPath,
+}: HeroSectionProps) => {
   return (
     <div className="w-full h-full animate-fade-in-down">
       <NormalSection
         className="hidden lg:block"
+        highlight={highlight}
         title={title}
         subTitle={subTitle}
         imgPath={imgPath}
