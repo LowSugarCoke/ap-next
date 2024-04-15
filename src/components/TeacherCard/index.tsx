@@ -29,15 +29,10 @@ const TeacherCard = ({
           {name}
         </h5>
 
-        <span className="text-sm text-gray-500 dark:text-gray-400">
-          {major}
-        </span>
+        <span className="text-sm text-gray-900 dark:text-white">{major}</span>
 
         {experience.map((item, index) => (
-          <span
-            key={index}
-            className="text-sm text-gray-500 dark:text-gray-400"
-          >
+          <span key={index} className="text-sm text-gray-900 dark:text-white">
             {item}
           </span>
         ))}
