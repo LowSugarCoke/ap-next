@@ -113,7 +113,7 @@ export default function APCS() {
 
         <div className="w-full flex justify-center items-center mt-8 relative">
           <Image
-            src="/apcs/certification_1.png"
+            src={`${basePath}/apcs/certification_1.png`}
             alt="Icon"
             width="1064"
             height="500"
@@ -122,7 +122,7 @@ export default function APCS() {
 
         <div className="w-full flex justify-center items-center mt-8 relative">
           <Image
-            src="/apcs/certification_2.png"
+            src={`${basePath}/apcs/certification_2.png`}
             alt="Icon"
             width="1064"
             height="500"
@@ -131,7 +131,7 @@ export default function APCS() {
 
         <div className="w-full flex justify-center items-center mt-8 relative mb-8">
           <Image
-            src="/apcs/certification_3.png"
+            src={`${basePath}/apcs/certification_3.png`}
             alt="Icon"
             width="1064"
             height="500"
