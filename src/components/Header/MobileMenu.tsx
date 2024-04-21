@@ -50,31 +50,39 @@ const MobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }: MobileMenuProps) => {
               <Disclosure as="div" className="-mx-3" key={link.name}>
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                      {link.name}
-                      {link.subLinks && (
-                        <ChevronDownIcon
-                          className={classNames(
-                            open ? "rotate-180" : "",
-                            "h-5 w-5 flex-none"
-                          )}
-                          aria-hidden="true"
-                        />
-                      )}
-                    </Disclosure.Button>
-                    {link.subLinks && (
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {link.subLinks.map((subLink) => (
-                          <Disclosure.Button
-                            as="a"
-                            href={`${basePath}${subLink.href}`}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                            key={subLink.name}
-                          >
-                            {subLink.name}
-                          </Disclosure.Button>
-                        ))}
-                      </Disclosure.Panel>
+                    {link.subLinks ? (
+                      <>
+                        <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                          {link.name}
+                          <ChevronDownIcon
+                            className={classNames(
+                              open ? "rotate-180" : "",
+                              "h-5 w-5 flex-none"
+                            )}
+                            aria-hidden="true"
+                          />
+                        </Disclosure.Button>
+                        <Disclosure.Panel className="mt-2 space-y-2">
+                          {link.subLinks.map((subLink) => (
+                            <Disclosure.Button
+                              as="a"
+                              href={`${basePath}${subLink.href}`}
+                              className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                              key={subLink.name}
+                            >
+                              {subLink.name}
+                            </Disclosure.Button>
+                          ))}
+                        </Disclosure.Panel>
+                      </>
+                    ) : (
+                      <Disclosure.Button
+                        as="a"
+                        href={`${basePath}${link.href}`}
+                        className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      >
+                        {link.name}
+                      </Disclosure.Button>
                     )}
                   </>
                 )}
