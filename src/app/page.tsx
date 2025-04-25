@@ -45,7 +45,7 @@ export default function Home() {
         <div
           className="
           absolute 
-          top-[62%] sm:top-1/3 md:top-1/4
+          top-[62%] sm:top-1/3 md:top-2/4
           left-1/2 transform -translate-x-1/2 -translate-y-1/2 
           text-center bg-white/80 backdrop-blur-sm 
           px-2 py-5 sm:px-6 sm:py-6 md:px-8 md:py-8 
@@ -54,7 +54,7 @@ export default function Home() {
         "
         >
           <h2 className="text-xl sm:text-2xl font-bold text-purple-700 mb-3">
-            📢 最新消息
+            📢 2025 最新消息
           </h2>
           <ul className="text-xs sm:text-sm md:text-base text-gray-800 space-y-2 text-left sm:text-center leading-relaxed">
             <li>
@@ -62,8 +62,7 @@ export default function Home() {
               UIUC、CMU、MIT、UC、CU、Duke、UofT
             </li>
             <li>💡 2025 特選錄取 清大資工／交大資工＋Toi選訓營2位</li>
-            <li>🏆 數位 APCS 滿級分</li>
-            <li>🧠 留學 know-how 私訊了解，不公開說明</li>
+            <li>🏆 數位APCS滿級分6位</li>
           </ul>
         </div>
       </div>
